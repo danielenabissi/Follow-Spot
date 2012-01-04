@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<title>Follow Spot</title>
+			<style type="text/css">
+			html, body, div { margin: 0; padding: 0;  }
+            
+			html,body { background-color: #c00;}
+			#overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
+			
+            .overlay_top, .overlay_left, .overlay_right, .overlay_bottom {
+                background-color: #000;
+				opacity: 0.9;
+
+            }
+			
+			.overlay_left, .overlay_right, .overlay_spot {
+				float: left;
+			}
+			
+			.overlay_mid { overflow: hidden; }
+			
+			#content { position: absolute; top: 0; left: 0; width: 800px; height: 600px; }
+			
+			.overlay_spot { background: url(spot.png) left top no-repeat; opacity: 0.9; }
+			
+        </style>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.followspot.js"></script>
+        <script type="application/javascript">
+            $(document).ready(function(){
+                $("#overlay").followspot({
+                    width: 200,
+					height: 200
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+    	<div id="content">
+    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin ligula id leo porttitor condimentum. Proin ipsum enim, ornare et convallis sit amet, vehicula nec eros. Curabitur augue justo, blandit non interdum ac, porta vulputate lacus. Aliquam dapibus, lorem et scelerisque vulputate, tortor mi ultricies purus, et luctus elit odio a felis. Fusce auctor elit in dolor ultricies ullamcorper. Sed aliquet, turpis sed fermentum elementum, eros nisi mollis massa, vel venenatis nisl metus eu nunc. Donec vel mi lorem. Cras facilisis ultricies lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce auctor suscipit nulla quis adipiscing. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed imperdiet, lacus et ultrices interdum, enim lacus vestibulum mi, at tempus neque mi id tellus. Ut a eros eros.
+
+Vestibulum orci neque, dictum non lobortis et, pellentesque id ligula. Phasellus ultrices ultrices vulputate. Nulla quis tellus at sem mollis egestas. Etiam ante risus, faucibus ut condimentum id, lacinia ut erat. Cras in purus eget risus viverra ultrices rutrum eu lorem. Nulla eu orci neque. Etiam sit amet elit ante, a porta felis. Pellentesque rutrum urna a nisi dignissim vitae elementum risus tincidunt. Aenean eu nibh risus. Aenean elit velit, lacinia ac lobortis eget, semper eget mauris.
+
+Duis vel tellus tellus. Cras arcu lectus, volutpat non posuere et, accumsan vehicula ligula. Suspendisse ante nisi, condimentum semper pulvinar nec, pharetra vitae nisl. Aliquam pretium, purus nec adipiscing rhoncus, metus mauris scelerisque urna, vitae dignissim mauris velit eu augue. Duis arcu arcu, laoreet varius viverra vel, placerat pulvinar justo. Fusce tristique ipsum a massa convallis vel consequat nunc porta. Phasellus mattis justo at ipsum vehicula tristique. Curabitur ultrices nunc vel leo iaculis vel venenatis tortor interdum. Nam massa mi, scelerisque ut facilisis in, iaculis id libero. Donec pharetra mauris eleifend eros hendrerit feugiat faucibus nisi fringilla. Donec ultricies risus eu magna suscipit nec tempus mauris consequat. In et euismod nisl. Donec a massa dui, a tincidunt eros. Ut ac enim neque. Nullam at magna mauris, sit amet aliquet nisl. Phasellus eget placerat nisi. Morbi lacinia nunc nec quam semper gravida luctus erat lacinia. Maecenas fringilla tincidunt ligula, nec pretium sem malesuada et.
+
+Cras semper viverra mi sit amet condimentum. Nulla facilisi. Integer ornare nisi euismod nunc laoreet sed fringilla orci aliquet. Sed suscipit placerat lacus vitae semper. Integer aliquam accumsan iaculis. Donec pharetra lacus vitae neque semper feugiat. Pellentesque eu velit libero, id vestibulum augue. Aliquam erat volutpat. Nam sollicitudin mauris nec sapien lobortis luctus. Suspendisse nec sagittis sem. Quisque porta orci non libero malesuada blandit. Nullam velit leo, ullamcorper vel egestas ac, molestie eget purus. Nullam lobortis enim vitae nisl tempor elementum. Aenean ut felis elit, sed consequat turpis. Donec varius erat nec neque rhoncus sagittis viverra metus tincidunt. Cras venenatis augue at erat hendrerit sed consectetur odio luctus.
+
+Integer volutpat, velit sit amet ornare posuere, eros nisi consequat lectus, nec tincidunt arcu arcu quis lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec in libero odio, non hendrerit purus. Integer rhoncus vulputate tortor quis iaculis. Nulla quis augue ante. Nunc mollis rutrum enim eu ultrices. Donec bibendum rutrum orci, vel euismod odio rutrum nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas massa non mauris volutpat nec ultricies sapien sodales. Vestibulum et eros lectus, nec auctor massa. Aenean luctus blandit nisl, non venenatis velit lacinia sit amet. Nullam eros turpis, dignissim ac facilisis in, pretium ac tortor. Etiam mollis viverra semper. Aenean vulputate magna nec leo congue blandit feugiat sem gravida. Vivamus vitae lorem turpis, vitae posuere urna. Aenean scelerisque pretium nulla et feugiat. In mattis ornare erat id consequat. In ac ipsum tortor, eu ullamcorper elit. 
+		</div>
+    	<div id="overlay">
+    		<div class="overlay_top"></div>
+			<div class="overlay_mid">
+				<div class="overlay_left"></div>
+				<div class="overlay_spot"></div>
+				<div class="overlay_right"></div>
+			</div>
+			<div style="clear: both;"></div>
+			<div class="overlay_bottom"></div>
+    	</div>
+    </body>
+</html>
